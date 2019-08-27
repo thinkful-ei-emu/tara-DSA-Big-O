@@ -25,20 +25,26 @@ function powerCalculator(base, power) {
 }
 
 function reverseString(str) {
-  if (str.length === 0) {
-    return '';
-  }
 
-  return str.slice(-1) + reverseString(str.slice(0, str.length - 1));
+  let result = '';
+  
+  for(let i=0; i < str.length; i++) {
+    result = str[i] + result;
+  }
+  return result;
 }
+
 
 function nthTriangle(n) {
-  if (n === 0) {
-    return 0;
-  }
 
-  return n + nthTriangle(n - 1);
+  let sum = 0;
+
+  for (let i = 0; i < n; i++) {
+    sum = sum + (n-i);
+  }
+  return sum;
 }
+
 
 function stringSplitter(str, splitter) {
   if (str.length === 0) {
