@@ -47,30 +47,31 @@ function nthTriangle(n) {
 
 
 function stringSplitter(str, splitter) {
-  if (str.length === 0) {
-    return '';
+  let result = '';
+
+  for(let i = 0; i < str.length; i++) {
+    if (str[i] !== splitter) {
+      result += str[i];
+    }
   }
-  if (str[0] === splitter) {
-    return '' + stringSplitter(str.slice(1), splitter);
-  }
-  return str[0] + stringSplitter(str.slice(1), splitter);
+  return result;
 }
 
-function fibonacci(n, i = 0, j = 0) {
-  if (i === 0) {
-    console.log(1);
-    j++;
-    n--;
-  }
+function fibonacci(n) {
 
-  if (n === 0) {
-    return;
-  }
-  console.log(i + j);
+  let prev = 1;
+  let prevprev = 0;
+  console.log(1);
 
-  let newNum = i + j;
-  fibonacci(n - 1, j, newNum);
+  for(let i = 1; i < n; i++) {
+
+    console.log(prev + prevprev);
+    let newNum = prev + prevprev;
+    prevprev = prev;
+    prev = newNum;
+  }
 }
+
 
 function factorial(num) {
   if (num === 0) {
