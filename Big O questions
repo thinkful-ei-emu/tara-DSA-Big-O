@@ -4,3 +4,7 @@
 3) The function is O(n^2), because we have nested loops.  For each input element, the function has to take n^2 actions.
 4) The function is O(n), because we have to perform the multiplication function for every index/piece of data.
 5) The function is O(n), because we have to perform the search on every item in the array.
+6) The function is O(n^2), because it loops over the array twice, so given an array of 5 elements, it will check each element 5 times, leading to 25 actions performed by the algorithm.
+7) The function is O(n), where n refers to the magniturde of num, because the function performs the same number of actions as num gets bigger.
+8) The function is O(logn), because as the dataset gets larger, the runtime increases at a proportionally much smaller rate.
+9) The function is O(1), because no matter how big the array is, the function will only do one thing--select a random item. 
