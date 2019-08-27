@@ -8,3 +8,4 @@
 7) The function is O(n), where n refers to the magniturde of num, because the function performs the same number of actions as num gets bigger.
 8) The function is O(logn), because as the dataset gets larger, the runtime increases at a proportionally much smaller rate.
 9) The function is O(1), because no matter how big the array is, the function will only do one thing--select a random item. 
+10) This function is checking to see if a num is a prime numbers.  The function is O(n) because the for loop depends on the the size of n.
