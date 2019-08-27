@@ -1,0 +1,2 @@
+1.a) This one is O(1) because no matter how many people are in the room, it will always only take one action to find a playmate.
+1.b) This one would be O(n) because you perform exactly one action for each person in the room.
